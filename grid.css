@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: 
+    'a a a a b b'
+    'a a a a b b'
+    'c c c d d d'
+    'c c c e e e'
+    ;
+    gap: 10px;
+    width: 70%;
+    margin: auto;
+}
+div{
+    padding: 2em;
+    text-align: center;
+    
+    
+}
+#a{
+    background-color: red;
+    color: red;
+    grid-area: a;
+    
+}
+#b{
+    background-color: orange;
+    color: orange;
+    grid-area: b;
+}
+#c{
+    background-color: green;
+    color: green;
+    grid-area: c;
+}
+#d{
+    background-color: blue;
+    color: blue;
+    grid-area: d;
+}
+#e{
+    background-color: blue;
+    color: blue;
+    grid-area: e;
+
+}
+button{
+    padding: 10px;
+}
